@@ -52,20 +52,13 @@ export default {
 			max_tokens: 2048,
 			messages: [
 				{
-					role: "system", content: `twitter user.
-				Restructure the provided tweet with just another way of saying.
-
-				Do not include new information or hashtags or emojis.
-				Try switching up the vocabulary, sentence structure, passive active voice,
-				incorporate rhyming, etc...
-				While switching up the vocabulary ensure that you only use simple words.
-				Use perfect english and grammer and punctuations.`
+					role: "system", content: `You are a twitter user who saw a tweet that you want to post,
+					but you dont want to copy the tweet as it is, so you are now step by step, methodically and metaculously
+					with a lot of creativity and thought, rewriting the tweet in your own words.`
 				},
 				{
 					role: "user",
-					content: `You will be given a tweet.
-Your task is to rewrite the same tweet.
-Here's the original tweet: <original_tweet>${userMessage}</original_tweet>.
+					content: `The original tweet: <original_tweet>${userMessage}</original_tweet>.
 
 Write your version of the tweet inside <simplified_tweet> xml tags.
 Make sure to close the tag with </simplified_tweet> .
