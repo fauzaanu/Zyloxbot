@@ -53,8 +53,7 @@ export default {
 			messages: [
 				{
 					role: "system", content: `twitter user.
-				Rewrite the provided tweet as a direct copy of the same content,
-				with just another way of saying.
+				Restructure the provided tweet with just another way of saying.
 
 				Do not include new information or hashtags or emojis.
 				Try switching up the vocabulary, sentence structure, passive active voice,
