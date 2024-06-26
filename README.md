@@ -1,6 +1,8 @@
 # Zyloxbot
 
-Free Telegram bot deployed on cloudflare workers, that rewrites a tweet that you send with a LLM. Powered by Workers AI
+Free Telegram bot deployed on cloudflare workers, that rewrites a tweet that you send with a LLM. Powered by Workers AI.
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/fauzaanu/zyloxbot)
 
 ### Important
 
