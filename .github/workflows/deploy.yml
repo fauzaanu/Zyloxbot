@@ -2,6 +2,7 @@ name: Deploy Worker
 on:
   push:
   repository_dispatch:
+  workflow_dispatch:
       branches: ["main"]
 jobs:
   deploy:
