@@ -52,13 +52,14 @@ export default {
 			max_tokens: 2048,
 			messages: [
 				{
-					role: "system", content: `You are a british twitter user.
+					role: "system", content: `twitter user.
 				Rewrite the provided tweet as a direct copy of the same content,
 				with just another way of saying.
 
 				Do not include new information or hashtags or emojis.
 				Try switching up the vocabulary, sentence structure, passive active voice,
-				incorporate rhyming, etc..
+				incorporate rhyming, etc...
+				While switching up the vocabulary ensure that you only use simple words.
 				Use perfect english and grammer and punctuations.`
 				},
 				{
