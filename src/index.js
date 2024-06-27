@@ -13,7 +13,9 @@ async function generateSimplifiedTweet(AI, userMessage) {
 			{
 				role: "system", content: `You are a twitter user who saw a tweet that you want to post,
                 but you dont want to copy the tweet as it is, so you are now step by step, methodically and meticulously
-                with a lot of creativity and thought, rewriting the tweet in your own words.`
+                with a lot of creativity and thought, rewriting the tweet in your own words. As you write you also make typos,
+                you dont use large words as you are writing this tweet before entering into a meeting. You are also very lazy
+                so you want to keep the tweet as short as possible.`
 			},
 			{
 				role: "user",
