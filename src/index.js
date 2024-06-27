@@ -72,15 +72,9 @@ export default {
 			return new Response('User not in channel', {status: 200});
 		}
 
-		// Generate 10 simplified tweets
-		const simplifiedTweets = [];
-		for (let i = 0; i < 10; i++) {
-			const tweet = await generateSimplifiedTweet(env.AI, userMessage);
-			simplifiedTweets.push(tweet);
-		}
 
-		// Send each simplified tweet as a separate message
-		for (const tweet of simplifiedTweets) {
+		for (let i = 0; i < 4; i++) {
+			const tweet = await generateSimplifiedTweet(env.AI, userMessage);
 			await sendTelegramMessage(chatId, tweet, env.TELEGRAM_API_KEY);
 		}
 
